@@ -7,7 +7,9 @@ int main(int argc, char* argv[])
 {
     setlocale(LC_ALL, "Rus");
 
-    int shift = 3;
+    int shift;
+    scanf("%d", &shift);
+    while ((getchar()) != '\n');
 
     char buf[4096];
     gets(buf);
