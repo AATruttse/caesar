@@ -14,8 +14,8 @@ int main(int argc, char* argv[])
     char buf[4096];
     gets(buf);
     for (size_t i = 0; i < strlen(buf); i++) {
-        if (buf[i] > 96 && buf[i] < 123) {
-            buf[i] = 97 + (((buf[i] - 97) + shift) % 26);
+        if (buf[i] > 32 && buf[i] < 125) {
+            buf[i] = 32 + (((buf[i] - 32) + shift) % 94);
         }
     }
 
